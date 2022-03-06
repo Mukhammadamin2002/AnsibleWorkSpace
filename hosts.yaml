@@ -1,0 +1,11 @@
+web:
+  hosts:
+    ubuntu-1:
+      ansible_host: 3.70.208.222
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
+    ubuntu-2:
+      ansible_host: 3.71.33.179
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
+      

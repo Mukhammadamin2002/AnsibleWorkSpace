@@ -1,0 +1,13 @@
+---
+- name: Docker Installation
+  hosts: web
+  become: yes
+  tasks: 
+    - name: install docker
+      shell:
+        "curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo usermod -aG docker $USER && sudo chmod 777 /var/run/docker.sock"
+    - name: Docker start & enable
+      service:
+        name: docker
+        state: started
+        enabled: yes
