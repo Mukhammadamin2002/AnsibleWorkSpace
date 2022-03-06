@@ -1,6 +1,6 @@
 ---
 - name: Docker Installation
-  hosts: web
+  hosts: main
   become: yes
   tasks: 
     - name: install docker

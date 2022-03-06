@@ -8,4 +8,9 @@ web:
       ansible_host: 3.71.33.179
       ansible_user: ubuntu
       ansible_ssh_private_key_file: ~/.ssh/id_rsa
-      
+main:
+  hosts:
+    main-ubuntu:
+      ansible_host: 3.120.250.138
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
