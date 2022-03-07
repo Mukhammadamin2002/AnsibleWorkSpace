@@ -16,3 +16,8 @@
 
 #### See Two Running Containers in below link | Wordpress & MariaDB
 [container list](https://exadel.s3.eu-central-1.amazonaws.com/ansible_container.jpg)
+
+#### Ansible Dynamic Inventory
+`aws_ec2` plugin is used to get ip of ec2 instance dynamically 
+
+#### As our Ansible Server part of Instance in AWS I have Provided I AM role to that server it wont need to provide secret_key and access_id in `aws_ec2.yaml file`
