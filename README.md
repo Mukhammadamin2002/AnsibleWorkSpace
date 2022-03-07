@@ -1,4 +1,5 @@
 ### Ansible Work Space
+
 #### Running ping command to two other server 
 `ansible {hostname} -m ping`
 #### View result in the link below 
@@ -9,3 +10,9 @@
 
 #### Running specific shell command on specific hosts
 `ansible {hostname} -m shell -a "command here"`
+
+#### Visit below link to see Wordpress Project running in Docker Container
+[wordpress project](https://exadel.s3.eu-central-1.amazonaws.com/ansible_wordpress.jpg)
+
+#### Running Two Containers | Wordpress & MariaDB
+[container list](https://exadel.s3.eu-central-1.amazonaws.com/ansible_container.jpg)
