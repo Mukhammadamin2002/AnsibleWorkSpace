@@ -14,5 +14,5 @@
 #### Visit below link to see Wordpress Project running in Docker Container
 [wordpress project](https://exadel.s3.eu-central-1.amazonaws.com/ansible_wordpress.jpg)
 
-#### Running Two Containers | Wordpress & MariaDB
+#### See Two Running Containers in below link | Wordpress & MariaDB
 [container list](https://exadel.s3.eu-central-1.amazonaws.com/ansible_container.jpg)
