@@ -1,0 +1,15 @@
+---
+docker_container:
+  image: wordpress
+  name: Wordpress
+  restart_policy: always
+  ports: 
+    - "8080:80"
+  links: "{{ db_volume }}:/var/lib/mysql"
+  volumes:
+      - "{{wordpress}}:/var/www/html"
+  env:
+    MYSQL_ROOT_PASSWORD: "{{ root_password }}"
+    MYSQL_PASSWORD: "{{ root_password }}"
+    MYSQL_DATABASE: "{{ db_name }}"
+    MYSQL_USER: "{{ db_user }}"

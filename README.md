@@ -17,6 +17,12 @@
 #### See Two Running Containers in below link | Wordpress & MariaDB containers are running
 [container list](https://exadel.s3.eu-central-1.amazonaws.com/ansible_container.jpg)
 
+#### To make credentials for container more secure Ansible-Vault is used
+`ansible-vault encrypt ./extra/creds.yaml`
+
+#### Ansible Vault password that will prompt you to enter those password instead we are using those passwd via `.vpass.txt` file
+`ansible-playbook ./extra/wordpress_playbook.yml --vault-password-file ./extra/.vpass.txt`
+
 #### Ansible Dynamic Inventory
 `aws_ec2` plugin is used to get ip of ec2 instance dynamically 
 

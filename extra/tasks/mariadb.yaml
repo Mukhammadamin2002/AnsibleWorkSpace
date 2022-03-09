@@ -1,0 +1,11 @@
+---
+docker_container:
+  image: mariadb
+  name: mariadb
+  volumes: 
+    - "{{ db_volume }}:/var/lib/mysql"
+  env:
+    MYSQL_ROOT_PASSWORD: "{{ root_password }}"
+    MYSQL_PASSWORD: "{{ root_password }}"
+    MYSQL_DATABASE: "{{ db_name }}"
+    MYSQL_USER: "{{ db_user }}"

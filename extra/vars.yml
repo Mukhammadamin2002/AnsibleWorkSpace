@@ -1,6 +1,0 @@
----
-db_volume: mariadb
-wordpress: wordpress
-root_password: secret
-db_name: mysql 
-db_user: root 
